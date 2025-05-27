@@ -11,6 +11,10 @@
     sans-serif;
 }
 
+#page1{
+  margin-left: 20px;
+}
+
 body {
   width: 100vw;
   overflow-x: hidden;
@@ -779,7 +783,7 @@ a:hover {
   margin-top: 4px;
 }
 
-.hidden{
+.hidden {
   display: none;
 }
 
@@ -795,25 +799,25 @@ a:hover {
   color: #424242;
 }
 
-#page1{
+#page1 {
   position: absolute;
   top: 0;
   left: 0;
 }
 
-#page2{
+#page2 {
   position: absolute;
   top: 0;
   right: 0;
 }
 
-.open-cart{
+.open-cart {
   display: flex;
   gap: 10px;
   align-items: center;
 }
 
-.between{
+.between {
   display: flex;
   justify-content: space-between;
   font-size: 1.8em;
@@ -836,38 +840,38 @@ a:hover {
   /* backdrop-filter: brightness(0.3); */
 }
 
-.width{
+.width {
   width: 20px;
   height: 20px;
   border-radius: 50%;
 }
 
-.gap{
+.gap {
   display: flex;
   gap: 10px;
   flex-wrap: wrap;
   justify-content: space-between;
 }
 
-.flex2{
+.flex2 {
   gap: 10px;
   display: flex;
   /* font-size: 1rem; */
-  font-size: .8rem !important;
+  font-size: 0.8rem !important;
 }
 
-.gap *{
+.gap * {
   color: #0860ca !important;
 }
 
-.width2{
+.width2 {
   width: 40px;
   height: 40px;
   border-radius: 50%;
 }
 
-.between2{
-  padding: 0 25px 0px 0; 
+.between2 {
+  padding: 0 25px 0px 0;
   align-items: center;
 }
 
@@ -905,10 +909,10 @@ a:hover {
     padding: 25px;
   }
 
-  nav{
+  nav {
     flex-wrap: wrap;
   }
-  
+
   nav ul {
     flex-wrap: wrap;
   }
@@ -997,6 +1001,71 @@ a:hover {
 }
 
 /* Prevent scrolling when menu is open */
+body.menu-open {
+  overflow: hidden;
+}
+
+/* General styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial,
+    sans-serif;
+}
+
+body {
+  width: 100vw;
+  overflow-x: hidden;
+  background: #010409;
+  color: #fff;
+}
+
+.hidden {
+  display: none;
+}
+
+.page {
+  position: fixed;
+  top: 0;
+  height: 100vh;
+  width: 330px;
+  overflow: auto;
+  padding: 50px 20px 0;
+  background: #010409;
+  z-index: 10000;
+  transition: transform 0.3s ease;
+}
+
+#page1 {
+  left: 0;
+  transform: translateX(-100%);
+}
+
+#page1:not(.hidden) {
+  transform: translateX(0);
+}
+
+#page2 {
+  right: 0;
+  transform: translateX(100%);
+}
+
+#page2:not(.hidden) {
+  transform: translateX(0);
+}
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 9999;
+  backdrop-filter: brightness(0.3);
+}
+
 body.menu-open {
   overflow: hidden;
 }

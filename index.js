@@ -1,4 +1,28 @@
 document.addEventListener("DOMContentLoaded", function () {
+  const menuBtn = document.getElementById("menuBtn");
+  const closeBtn = document.querySelector(".open-page1");
+  const page1 = document.getElementById("page1");
+
+  if (menuBtn && closeBtn && page1) {
+    menuBtn.addEventListener("click", () => {
+      page1.classList.remove("hidden");
+    });
+  }
+
+  closeBtn.addEventListener("click", () => {
+    page1.classList.add("hidden");
+  });
+
+  if (menuBtn && closeBtn && page1) {
+    menuBtn.addEventListener("click", () => {
+      page1.classList.remove("hidden");
+    });
+
+    closeBtn.addEventListener("click", () => {
+      page1.classList.add("hidden");
+    });
+  }
+
   const savedFollowState = localStorage.getItem("githubProfileFollowState");
   const savedSponsorState = localStorage.getItem("githubProfileSponsorState");
 
@@ -91,76 +115,67 @@ document.addEventListener("DOMContentLoaded", function () {
       this.classList.add("active");
     });
   });
-});
 
-// Get elements
-const leftMenu = document.getElementById('page1');
-const rightMenu = document.getElementById('page2');
-const backdrop = document.querySelector('.backdrop');
-const openLeftBtn = document.querySelector('.open-page1');
-const openRightBtn = document.querySelector('.open-page2');
-const closeBtns = document.querySelectorAll('.fa-xmark');
+  const openLeftBtn = document.getElementById("openLeftMenu"); // Reference the button
+  const leftMenu = document.getElementById("page1"); // Reference the left menu
+  const backdrop = document.querySelector(".backdrop"); // Reference the backdrop
 
-// Toggle menu function
-function toggleMenu(menu) {
-  const otherMenu = menu === leftMenu ? rightMenu : leftMenu;
-  
-  // Close the other menu if open
-  if (!otherMenu.classList.contains('hidden')) {
-    otherMenu.classList.add('hidden');
+  // Function to toggle the menu
+  function toggleMenu(menu) {
+    menu.classList.toggle("hidden");
+    backdrop.classList.toggle("hidden");
+    document.body.classList.toggle("menu-open");
   }
-  
-  // Toggle current menu
-  menu.classList.toggle('hidden');
-  
-  // Toggle backdrop and body class
-  if (!leftMenu.classList.contains('hidden') || !rightMenu.classList.contains('hidden')) {
-    backdrop.classList.remove('hidden');
-    document.body.classList.add('menu-open');
-  } else {
-    backdrop.classList.add('hidden');
-    document.body.classList.remove('menu-open');
-  }
-}
 
-// Event listeners
-openLeftBtn.addEventListener('click', (e) => {
-  e.stopPropagation();
-  toggleMenu(leftMenu);
-});
+  // Event listener for opening the left menu
+  openLeftBtn?.addEventListener("click", (e) => {
+    e.stopPropagation(); // Prevent event bubbling
+    toggleMenu(leftMenu);
+  });
 
-openRightBtn.addEventListener('click', (e) => {
-  e.stopPropagation();
-  toggleMenu(rightMenu);
-});
+  // Event listener for closing the menu when clicking on the backdrop
+  backdrop?.addEventListener("click", () => {
+    leftMenu.classList.add("hidden");
+    backdrop.classList.add("hidden");
+    document.body.classList.remove("menu-open");
+  });
 
-backdrop.addEventListener('click', () => {
-  leftMenu.classList.add('hidden');
-  rightMenu.classList.add('hidden');
-  backdrop.classList.add('hidden');
-  document.body.classList.remove('menu-open');
-});
+  const rightMenu = document.getElementById("page2");
+  const openRightBtn = document.querySelector(".open-page2");
+  const closeBtns = document.querySelectorAll(".fa-xmark");
 
-closeBtns.forEach(btn => {
-  btn.addEventListener('click', (e) => {
+  // Event listeners for opening menus
+  openRightBtn.addEventListener("click", (e) => {
     e.stopPropagation();
-    const menu = e.target.closest('.page');
-    menu.classList.add('hidden');
-    
-    if (leftMenu.classList.contains('hidden') && rightMenu.classList.contains('hidden')) {
-      backdrop.classList.add('hidden');
-      document.body.classList.remove('menu-open');
+    toggleMenu(rightMenu);
+  });
+
+  // Event listeners for close buttons
+  closeBtns.forEach((btn) => {
+    btn.addEventListener("click", (e) => {
+      e.stopPropagation();
+      const menu = e.target.closest(".page");
+      menu.classList.add("hidden");
+
+      if (leftMenu.classList.contains("hidden") && rightMenu.classList.contains("hidden")) {
+        backdrop.classList.add("hidden");
+        document.body.classList.remove("menu-open");
+      }
+    });
+  });
+
+  // Close menus when clicking outside
+  document.addEventListener("click", (e) => {
+    if (
+      !leftMenu.contains(e.target) &&
+      !rightMenu.contains(e.target) &&
+      !openLeftBtn.contains(e.target) &&
+      !openRightBtn.contains(e.target)
+    ) {
+      leftMenu.classList.add("hidden");
+      rightMenu.classList.add("hidden");
+      backdrop.classList.add("hidden");
+      document.body.classList.remove("menu-open");
     }
   });
-});
-
-// Close menu when clicking outside
-document.addEventListener('click', (e) => {
-  if (!leftMenu.contains(e.target) && !rightMenu.contains(e.target) && 
-      !openLeftBtn.contains(e.target) && !openRightBtn.contains(e.target)) {
-    leftMenu.classList.add('hidden');
-    rightMenu.classList.add('hidden');
-    backdrop.classList.add('hidden');
-    document.body.classList.remove('menu-open');
-  }
 });
