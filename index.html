@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en" data-color-mode="light" data-light-theme="light" data-dark-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <div class="layer" id="layer">
+        <div id="page1" class="hidden page">
+            <div class="between">
+                <i class="fab fa-github"></i>
+                <i class="fa-solid fa-xmark open-page1"></i>
+            </div>
+            <div class="open-cart">
+                <i class="fa-solid fa-house"></i>
+                <p>Home</p>
+            </div>
+            <div class="open-cart">
+                <i class="fa-solid fa-circle-dot"></i>
+                <p>Issues</p>
+            </div>
+            <div class="open-cart">
+                <img src="assets/arrow.png" class="width" alt="">
+                <p>Pull request</p>
+            </div>
+            <div class="open-cart">
+                <i class="fa-solid fa-table"></i>
+                <p>Projects</p>
+            </div>
+            <div class="open-cart">
+                <i class="fa-solid fa-message"></i>
+                <p>Discussions</p>
+            </div>
+            <div class="open-cart">
+                <i class="fa-solid fa-computer"></i>
+                <p>codespaces</p>
+            </div>
+            <div class="open-cart">
+                <img src="assets/capilot.png" class="width" alt="">
+                <p>Capilot</p>
+            </div>
+            <hr>
+            <div class="open-cart">
+                <img src="assets/telescope.png" alt="" class="width">
+                <p>Explore</p>
+            </div>
+            <div class="open-cart">
+                <i class="fa-solid fa-gift"></i>
+                <p>Marketplace</p>
+            </div>
+            <hr>
+            <div class="between">
+                <b>repositories</b>
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+            <div class="open-cart">
+                <img src="assets/logo.png" class="width" alt="">
+                <p>Abdulaziz-developer1/project1</p>
+            </div>
+            <div class="open-cart">
+                <img src="assets/logo.png" class="width" alt="">
+                <p>Abdulaziz-developer1/project2</p>
+            </div>
+            <div class="open-cart">
+                <img src="assets/logo.png" class="width" alt="">
+                <p>Abdulaziz-developer1/project3</p>
+            </div>
+            <div class="open-cart">
+                <img src="assets/logo.png" class="width" alt="">
+                <p>Abdulaziz-developer1/project4</p>
+            </div>
+            <div class="open-cart">
+                <img src="assets/logo.png" class="width" alt="">
+                <p>Abdulaziz-developer1/project5</p>
+            </div>
+            <p>Show more</p>
+            <p>© 2025 GitHub, Inc.</p>
+            <a href="#" class="gap">
+                <p>About</p>
+                <p>Blog</p>
+                <p>terms</p>
+                <p>Privacy</p>
+                <p>Security</p>
+                <p>Status</p>
+                <p>Do not share my personal information</p>
+                <p>Manage cookies</p>
+            </a>
+        </div>
+
+        <div id="page2" class="hidden page">
+            <div class="between between2">
+                <div class="flex2">
+                    <img class="width2" src="assets/logo.png" alt="">
+                    <div>
+                        <b>Abdulaziz-developer1</b>
+                        <p>Abdulaziz Tohirov</p>
+                    </div>
+                </div>
+                <div class="flex2">
+                    <i class="fa-solid fa-arrows-turn-to-dots"></i>
+                    <i onclick="toggleLayer()" class="fa-solid fa-xmark"></i>
+                </div>
+            </div>
+            <div class="open-cart">
+                <i class="fa-solid fa-smile"></i>
+                <p>Set status</p>
+            </div>
+            <hr>
+            <div class="open-cart">
+                <i class="fa-solid fa-user"></i>
+                <p>Your profile</p>
+            </div>
+            <div class="open-cart">
+                <i class="fas fa-book"></i>
+                <p>Your repositories</p>
+            </div>
+            <div class="open-cart">
+                <img src="assets/capilot.png" class="width" alt="">
+                <p>Your Capilot</p>
+            </div>
+            <div class="open-cart">
+                <i class="fa-solid fa-square-poll-vertical"></i>
+                <p>Your Projects</p>
+            </div>
+            <div class="open-cart">
+                <i class="fa-solid fa-star"></i>
+                <p>Your stars</p>
+            </div>
+            <div class="open-cart">
+                <i class="fa-solid fa-code"></i>
+                <p>Your gists</p>
+            </div>
+            <div class="open-cart">
+                <i class="fa-solid fa-building"></i>
+                <p>Your organizations</p>
+            </div>
+            <div class="open-cart">
+                <i class="fa-solid fa-globe"></i>
+                <p>Your enterprices</p>
+            </div>
+            <div class="open-cart">
+                <i class="fa-solid fa-heart"></i>
+                <p>Your sponsors</p>
+            </div>
+            <hr>
+            <div class="open-cart">
+                <i class="fa-solid fa-download"></i>
+                <p>Try enterprice</p>
+            </div>
+            <div class="open-cart">
+                <i class="fa-solid fa-flask"></i>
+                <p>Feature preview</p>
+            </div>
+            <div class="open-cart">
+                <i class="fa-solid fa-gear"></i>
+                <p>Settings</p>
+            </div>
+            <hr>
+            <div class="open-cart">
+                <i class="fa-solid fa-table-columns"></i>
+                <p>Github website</p>
+            </div>
+            <div class="open-cart">
+                <i class="fa-solid fa-book-open"></i>
+                <p>Github docs</p>
+            </div>
+            <div class="open-cart">
+                <i class="fa-solid fa-users"></i>
+                <p>Github support</p>
+            </div>
+            <div class="open-cart">
+                <i class="fa-solid fa-message"></i>
+                <p>github community</p>
+            </div>
+            <hr>
+            <div class="open-cart">
+                <i class="fa-solid fa-right-from-bracket"></i>
+                <p>Sign out</p>
+            </div>
+        </div>
+
+        <div class="backdrop hidden"></div>
+    </div>
+
+    <div class="all">
+        <header>
+            <div class="hover"></div>
+            <nav>
+                <div class="left">
+                    <button class="border menubtn" id="openLeftMenu"><i class="fa-solid fa-bars"></i></button>
+                    <i class="fa-brands fa-github"></i>
+                    <h3>Abdulaziz-developer1</h3>
+                </div>
+                <div class="right">
+                    <div class="search border">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <input class="th" type="text" placeholder="Type / to search">
+                        <hr class="th">
+                        <i class="th" class="fa-solid fa-terminal terminal"></i>
+                    </div>
+                    <div class="border th">
+                        <img class="capilot1" src="assets/capilot.png" alt="capilot icon">
+                        <hr><i class="fa-solid fa-chevron-down capilot2"></i>
+                    </div>
+                    <hr class="th">
+                    <div class="border th new">
+                        <i class="fa-solid fa-plus"></i>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                    <div class="border th issue">
+                        <i id="border" class="fa-solid fa-circle-dot"></i>
+                    </div>
+                    <div class="border th pull">
+                        <img src="assets/arrow.png" alt="arrow icon">
+                    </div>
+                    <div class="border notifications">
+                        <img src="assets/box.png" alt="box icon">
+                    </div>
+                    <div class="logo open-page2">
+                        <img src="assets/logo.png" alt="logo img">
+                    </div>
+                </div>
+            </nav>
+
+            <nav class="second">
+                <ul>
+                    <li class="active">
+                        <div>
+                            <i class="fa-solid fa-book-open"></i>
+                            <p>Overview</p>
+                        </div>
+                    </li>
+
+                    <li>
+                        <i class="fa-solid fa-book"></i>
+                        <p>Repositories</p>
+                        <div class="border round">50</div>
+                    </li>
+
+                    <li>
+                        <i class="fa-solid fa-table"></i>
+                        <p>Projects</p>
+                    </li>
+
+                    <li>
+                        <i class="fa-solid fa-cube"></i>
+                        <p>Packages</p>
+                    </li>
+
+                    <li>
+                        <i class="fa-regular fa-star"></i>
+                        <p>Stars</p>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <hr>
+
+        <div class="main-container">
+            <div class="profile-container">
+                <div class="profile-sidebar">
+                    <div class="profile-image">
+                        <img src="assets/logo.png" alt="Profile" class="avatar-large">
+                    </div>
+                    <h1 class="profile-name">Tohirov Abdulaziz</h1>
+                    <p class="profile-username">
+                        Abdulaziz-developer1</p>
+                    <p class="profile-bio">Student | Web Developer</p>
+
+                    <div class="profile-actions">
+                        <button class="follow-button" id="followButton">Follow</button>
+                        <button class="sponsor-button" id="sponsorButton">
+                            <i class="fas fa-heart"></i> <span id="sponsorText">Sponsor</span>
+                        </button>
+                    </div>
+
+                    <div class="profile-details">
+                        <div class="detail-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Uzbekistan</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-link"></i>
+                            <a href="https://portflioooo.vercel.app/">portfolio</a>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fab fa-instagram"></i>
+                            <a href="#">@t__abdulaz1z</a>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fab fa-telegram"></i>
+                            <a href="#">@t_abdulaz1z</a>
+                        </div>
+                    </div>
+
+                    <div class="profile-stats">
+                        <a href="#" class="stat-item">
+                            <i class="fas fa-users"></i>
+                            <strong>42</strong> followers
+                        </a>
+                        <span>·</span>
+                        <a href="#" class="stat-item">
+                            <strong>23</strong> following
+                        </a>
+                    </div>
+
+                    <div class="organizations">
+                        <h3>Achievements</h3>
+                        <div class="org-list">
+                            <a href="#">
+                                <img src="assets/a1.png" alt="Org" class="org-avatar">
+                            </a>
+                            <a href="#">
+                                <img src="assets/a2.png" alt="Org" class="org-avatar">
+                            </a>
+                            <a href="#">
+                                <img src="assets/a3.png" alt="Org" class="org-avatar">
+                            </a>
+                            <a href="#">
+                                <img src="assets/a4.png" alt="Org" class="org-avatar">
+                            </a>
+                            <a href="#">
+                                <img src="assets/a5.png" alt="Org" class="org-avatar">
+                            </a>
+                            <a href="#">
+                                <img src="assets/a6.png" alt="Org" class="org-avatar">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="profile-content">
+                    <div class="readme-section">
+                        <div class="readme-header">
+                            <div class="readme-title">
+                                <i class="fas fa-bookmark"></i>
+                                <span>README.md</span>
+                            </div>
+                            <button class="edit-button">
+                                <i class="fas fa-pencil-alt"></i> Edit
+                            </button>
+                        </div>
+                        <div class="readme-content">
+                            <h1>Hi there 👋</h1>
+                            <h3>I'm Tohirov Abdulaziz, a student and web developer from Uzbekistan</h3>
+                            <ul>
+                                <li>🔭 I'm currently working on school projects</li>
+                                <li>🌱 Learning JavaScript and React</li>
+                                <li>👯 Looking to collaborate on open source</li>
+                                <li>⚡ Fun fact: I love coding and playing chess</li>
+                            </ul>
+                            <br>
+                            <img src="https://camo.githubusercontent.com/00fd9630c790cb0adbe26ba4d12a287793db1c35f109a447c81ad047507b47ec/68747470733a2f2f6769746875622d726561646d652d73746174732e76657263656c2e6170702f6170693f757365726e616d653d416264756c617a697a2d646576656c6f706572312673686f775f69636f6e733d74727565267468656d653d6461726b"
+                                alt="" class="imgg">
+                            <br><br>
+                            <img src="https://camo.githubusercontent.com/adab995844f34bffeaf1d14724cf2044ced4f8deed33338bcda9a7c4751f6cd9/68747470733a2f2f7777772e636f6465776172732e636f6d2f75736572732f416264756c617a697a31322f6261646765732f6c61726765"
+                                alt="">
+                            <br><br>
+                            <img src="https://camo.githubusercontent.com/83355d00554e9a350407fb0b5f5fba8756ae09ddb6925b96f82f08b02c60c0cc/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f4d6f6e6b6579747970652d50726f66696c652d6f72616e6765"
+                                alt="">
+                        </div>
+                    </div>
+
+                    <div class="pinned-section">
+                        <h2 class="section-title">
+                            <i class="fas fa-thumbtack"></i> Pinned
+                        </h2>
+                        <div class="pinned-grid">
+                            <div class="repo-card">
+                                <div class="repo-header">
+                                    <h3 class="repo-title">
+                                        <a href="#">
+                                            <i class="fas fa-book"></i> project
+                                        </a>
+                                    </h3>
+                                    <div class="repo-actions">
+                                        <button class="repo-button">
+                                            <i class="far fa-star"></i> Star
+                                        </button>
+                                    </div>
+                                </div>
+                                <p class="repo-description">
+                                    project using js
+                                </p>
+                                <div class="repo-meta">
+                                    <span class="repo-language">
+                                        <span class="language-color" style="background-color: #f1e05a;"></span>
+                                        JavaScript
+                                    </span>
+                                    <span class="repo-stars">
+                                        <i class="far fa-star"></i> 42
+                                    </span>
+                                    <span class="repo-forks">
+                                        <i class="fas fa-code-branch"></i> 5
+                                    </span>
+                                </div>
+                            </div>
+
+                            <div class="repo-card">
+                                <div class="repo-header">
+                                    <h3 class="repo-title">
+                                        <a href="#">
+                                            <i class="fas fa-book"></i> project
+                                        </a>
+                                    </h3>
+                                    <div class="repo-actions">
+                                        <button class="repo-button">
+                                            <i class="far fa-star"></i> Star
+                                        </button>
+                                    </div>
+                                </div>
+                                <p class="repo-description">
+                                    project using css
+                                </p>
+                                <div class="repo-meta">
+                                    <span class="repo-language">
+                                        <span class="language-color" style="background-color: #3572A5;"></span>
+                                        css
+                                    </span>
+                                    <span class="repo-stars">
+                                        <i class="far fa-star"></i> 18
+                                    </span>
+                                    <span class="repo-forks">
+                                        <i class="fas fa-code-branch"></i> 3
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="repo-card">
+                                <div class="repo-header">
+                                    <h3 class="repo-title">
+                                        <a href="#">
+                                            <i class="fas fa-book"></i> project
+                                        </a>
+                                    </h3>
+                                    <div class="repo-actions">
+                                        <button class="repo-button">
+                                            <i class="far fa-star"></i> Star
+                                        </button>
+                                    </div>
+                                </div>
+                                <p class="repo-description">
+                                    project using js
+                                </p>
+                                <div class="repo-meta">
+                                    <span class="repo-language">
+                                        <span class="language-color" style="background-color: #f1e05a;"></span>
+                                        JavaScript
+                                    </span>
+                                    <span class="repo-stars">
+                                        <i class="far fa-star"></i> 42
+                                    </span>
+                                    <span class="repo-forks">
+                                        <i class="fas fa-code-branch"></i> 5
+                                    </span>
+                                </div>
+                            </div>
+
+                            <div class="repo-card">
+                                <div class="repo-header">
+                                    <h3 class="repo-title">
+                                        <a href="#">
+                                            <i class="fas fa-book"></i> project
+                                        </a>
+                                    </h3>
+                                    <div class="repo-actions">
+                                        <button class="repo-button">
+                                            <i class="far fa-star"></i> Star
+                                        </button>
+                                    </div>
+                                </div>
+                                <p class="repo-description">
+                                    project using css
+                                </p>
+                                <div class="repo-meta">
+                                    <span class="repo-language">
+                                        <span class="language-color" style="background-color: #3572A5;"></span>
+                                        css
+                                    </span>
+                                    <span class="repo-stars">
+                                        <i class="far fa-star"></i> 18
+                                    </span>
+                                    <span class="repo-forks">
+                                        <i class="fas fa-code-branch"></i> 3
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="repo-card">
+                                <div class="repo-header">
+                                    <h3 class="repo-title">
+                                        <a href="#">
+                                            <i class="fas fa-book"></i> project
+                                        </a>
+                                    </h3>
+                                    <div class="repo-actions">
+                                        <button class="repo-button">
+                                            <i class="far fa-star"></i> Star
+                                        </button>
+                                    </div>
+                                </div>
+                                <p class="repo-description">
+                                    project using js
+                                </p>
+                                <div class="repo-meta">
+                                    <span class="repo-language">
+                                        <span class="language-color" style="background-color: #f1e05a;"></span>
+                                        JavaScript
+                                    </span>
+                                    <span class="repo-stars">
+                                        <i class="far fa-star"></i> 42
+                                    </span>
+                                    <span class="repo-forks">
+                                        <i class="fas fa-code-branch"></i> 5
+                                    </span>
+                                </div>
+                            </div>
+
+                            <div class="repo-card">
+                                <div class="repo-header">
+                                    <h3 class="repo-title">
+                                        <a href="#">
+                                            <i class="fas fa-book"></i> project
+                                        </a>
+                                    </h3>
+                                    <div class="repo-actions">
+                                        <button class="repo-button">
+                                            <i class="far fa-star"></i> Star
+                                        </button>
+                                    </div>
+                                </div>
+                                <p class="repo-description">
+                                    project using css
+                                </p>
+                                <div class="repo-meta">
+                                    <span class="repo-language">
+                                        <span class="language-color" style="background-color: #3572A5;"></span>
+                                        css
+                                    </span>
+                                    <span class="repo-stars">
+                                        <i class="far fa-star"></i> 18
+                                    </span>
+                                    <span class="repo-forks">
+                                        <i class="fas fa-code-branch"></i> 3
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contributions-section">
+                        <div class="contributions-header">
+                            <h2 class="section-title">
+                                <span id="contributionsYear">2023</span> contributions
+                            </h2>
+                            <div class="year-selector">
+                                <button class="year-button" data-year="2025">2025</button>
+                                <button class="year-button" data-year="2024">2024</button>
+                                <button class="year-button" data-year="2023">2023</button>
+                                <button class="year-button" data-year="2022">2022</button>
+                            </div>
+                        </div>
+                        <div class="contributions-graph">
+                            <img src="assets/2025.png" alt="2025 GitHub contributions" id="contributionsImage">
+                        </div>
+                        <p class="contributions-footer">
+                            Contributions in the last year
+                        </p>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="index.js"></script>
+</body>
+
+</html>
