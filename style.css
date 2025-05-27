@@ -11,13 +11,11 @@
     sans-serif;
 }
 
-<<<<<<< HEAD
 #page1{
   margin-left: 20px;
 }
 
-=======
->>>>>>> bd7fd3ee6562805c5c159a553e98464295b4df55
+
 body {
   width: 100vw;
   overflow-x: hidden;
@@ -786,11 +784,7 @@ a:hover {
   margin-top: 4px;
 }
 
-<<<<<<< HEAD
 .hidden {
-=======
-.hidden{
->>>>>>> bd7fd3ee6562805c5c159a553e98464295b4df55
   display: none;
 }
 
@@ -806,41 +800,25 @@ a:hover {
   color: #424242;
 }
 
-<<<<<<< HEAD
 #page1 {
-=======
-#page1{
->>>>>>> bd7fd3ee6562805c5c159a553e98464295b4df55
-  position: absolute;
+            position: absolute;
   top: 0;
   left: 0;
 }
 
-<<<<<<< HEAD
 #page2 {
-=======
-#page2{
->>>>>>> bd7fd3ee6562805c5c159a553e98464295b4df55
   position: absolute;
   top: 0;
   right: 0;
 }
 
-<<<<<<< HEAD
 .open-cart {
-=======
-.open-cart{
->>>>>>> bd7fd3ee6562805c5c159a553e98464295b4df55
   display: flex;
   gap: 10px;
   align-items: center;
 }
 
-<<<<<<< HEAD
 .between {
-=======
-.between{
->>>>>>> bd7fd3ee6562805c5c159a553e98464295b4df55
   display: flex;
   justify-content: space-between;
   font-size: 1.8em;
@@ -863,28 +841,19 @@ a:hover {
   /* backdrop-filter: brightness(0.3); */
 }
 
-<<<<<<< HEAD
 .width {
-=======
-.width{
->>>>>>> bd7fd3ee6562805c5c159a553e98464295b4df55
   width: 20px;
   height: 20px;
   border-radius: 50%;
 }
 
-<<<<<<< HEAD
 .gap {
-=======
-.gap{
->>>>>>> bd7fd3ee6562805c5c159a553e98464295b4df55
   display: flex;
   gap: 10px;
   flex-wrap: wrap;
   justify-content: space-between;
 }
 
-<<<<<<< HEAD
 .flex2 {
   gap: 10px;
   display: flex;
@@ -897,32 +866,13 @@ a:hover {
 }
 
 .width2 {
-=======
-.flex2{
-  gap: 10px;
-  display: flex;
-  /* font-size: 1rem; */
-  font-size: .8rem !important;
-}
-
-.gap *{
-  color: #0860ca !important;
-}
-
-.width2{
->>>>>>> bd7fd3ee6562805c5c159a553e98464295b4df55
   width: 40px;
   height: 40px;
   border-radius: 50%;
 }
 
-<<<<<<< HEAD
 .between2 {
   padding: 0 25px 0px 0;
-=======
-.between2{
-  padding: 0 25px 0px 0; 
->>>>>>> bd7fd3ee6562805c5c159a553e98464295b4df55
   align-items: center;
 }
 
@@ -960,17 +910,10 @@ a:hover {
     padding: 25px;
   }
 
-<<<<<<< HEAD
   nav {
     flex-wrap: wrap;
   }
 
-=======
-  nav{
-    flex-wrap: wrap;
-  }
-  
->>>>>>> bd7fd3ee6562805c5c159a553e98464295b4df55
   nav ul {
     flex-wrap: wrap;
   }
@@ -1061,7 +1004,6 @@ a:hover {
 /* Prevent scrolling when menu is open */
 body.menu-open {
   overflow: hidden;
-<<<<<<< HEAD
 }
 
 /* General styles */
@@ -1128,6 +1070,3 @@ body {
 body.menu-open {
   overflow: hidden;
 }
-=======
-}
->>>>>>> bd7fd3ee6562805c5c159a553e98464295b4df55
